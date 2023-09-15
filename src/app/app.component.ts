@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { ApiService } from './api.service'
 
 
-import { faWandMagic, faLightbulb, faRotateLeft } from '@fortawesome/free-solid-svg-icons';
+import { faWandMagic, faLightbulb, faRotateLeft, faDiamond, faUser, faLayerGroup, faBox  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-root', 
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -14,6 +14,10 @@ export class AppComponent {
   faWandMagic = faWandMagic
   faLightbulb = faLightbulb
   faRotateLeft = faRotateLeft
+  faDiamond    = faDiamond
+  faUser =       faUser
+  faLayerGroup = faLayerGroup
+  faBox     =    faBox
 
    constructor(private apiService: ApiService) { }
 
@@ -36,13 +40,13 @@ export class AppComponent {
 
   // ...
 
-  
+
   }
 
 
-   
 
-  
+
+
 
 
 
