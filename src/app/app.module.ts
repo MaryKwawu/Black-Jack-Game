@@ -66,9 +66,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-
 // Import the ModalModule from ngx-bootstrap
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { ApiModule } from './api.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -78,10 +78,9 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    ApiModule,
     ModalModule.forRoot(),
-    ],
-  providers: [],
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
