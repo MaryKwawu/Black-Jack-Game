@@ -11,6 +11,8 @@ import { faWandMagic, faLightbulb, faRotateLeft, faDiamond, faUser, faLayerGroup
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'midnight-ace-1';
+
   faWandMagic = faWandMagic
   faLightbulb = faLightbulb
   faRotateLeft = faRotateLeft
