@@ -60,7 +60,7 @@
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -74,12 +74,12 @@ import { ModalModule } from 'ngx-bootstrap/modal';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
     ModalModule.forRoot(),
-    HttpClientModule,
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })

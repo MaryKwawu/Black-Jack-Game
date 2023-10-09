@@ -71,21 +71,22 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './api.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing'; // Import HttpTestingController
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 describe('AppComponent', () => {
   let httpTestingController: HttpTestingController; // Declare HttpTestingController
 
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        HttpClientModule,
         HttpClientTestingModule,
         FontAwesomeModule,
       ],
-      declarations: [AppComponent],
+      providers: [AppComponent, ApiService],
     });
 
     httpTestingController = TestBed.inject(HttpTestingController); // Initialize HttpTestingController
